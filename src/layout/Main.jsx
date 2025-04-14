@@ -3,6 +3,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import { Outlet } from 'react-router-dom'
 import LeftSide from '../components/LeftSide'
+import CategoriesInfo from '../components/CategoriesInfo/CategoriesInfo'
 
 export default function Main() {
   return (
@@ -28,13 +29,11 @@ export default function Main() {
 
 
         <div>
-          <div className="flex justify-between">
-            {/* Left side */}
-            <LeftSide></LeftSide>
-              
-              <Outlet></Outlet>
-              <h2>gello</h2>
-          </div>
+          <CategoriesInfo>
+         
+
+          </CategoriesInfo>
+          
         </div>
         </div>
 
