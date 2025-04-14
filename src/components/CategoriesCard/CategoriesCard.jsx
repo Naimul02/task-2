@@ -8,7 +8,7 @@ export default function CategoriesCard() {
     console.log("id : " , id)
     
 
-    const {data : informations} = useQuery({
+    const {data : informations , isLoading} = useQuery({
         queryKey : ['categoryInfo' , id],
         queryFn : async() => {
                 const res = await axios.get(`http://localhost:5000/categories/${id}`);
@@ -18,7 +18,11 @@ export default function CategoriesCard() {
 } )
 
 
-    
+    if(isLoading){
+      return <div className='flex items-center h-screen justify-center  w-[520px]'>
+        <span className="loading loading-spinner loading-xl"></span>
+      </div>
+    }
   return (
 
     <div className='space-y-3'>

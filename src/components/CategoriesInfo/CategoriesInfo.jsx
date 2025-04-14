@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 
 export default function CategoriesInfo() {
 
-    const {data : categoriesInfo} = useQuery({
+    const {data : categoriesInfo } = useQuery({
             queryKey : ['categoryInfo'],
             queryFn : async() => {
                     const res = await axios.get('http://localhost:5000/categories');
@@ -20,14 +20,14 @@ export default function CategoriesInfo() {
     <div className=''>
          <div className="flex gap-4">
                     {/* Left side */}
-                    <div>
+                    <div className=''>
                     <LeftSide></LeftSide>
                     </div>
-                    <div className='w-full'>
+                    <div className='max-w-[520px]'>
                     <Outlet></Outlet>
                     </div>
-                    <div>
-                      gello
+                    <div className='flex-1'>
+                      <img src="/img/Desktop.png" alt="" />
                     </div>
                   </div>
         

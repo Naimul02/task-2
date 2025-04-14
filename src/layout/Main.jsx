@@ -7,7 +7,7 @@ import CategoriesInfo from '../components/CategoriesInfo/CategoriesInfo'
 
 export default function Main() {
   return (
-    <div className='bg-base-200 p-6'>
+    <div className='bg-base-200 p-6 relative'>
 
       <div className='flex gap-4'>
         <aside>
@@ -25,10 +25,12 @@ export default function Main() {
         </aside>
         
         <div className='w-full'>
+        <div className=' bg-base-200'>
         <Navbar></Navbar>
+        </div>
 
 
-        <div>
+        <div className='sticky top-20'>
           <CategoriesInfo>
          
 

@@ -9,4 +9,8 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
+  server: {
+    port: 3000,
+    open: '/duas/67fb6bc77f45cb4e43ea5ce2', 
+  },
 })

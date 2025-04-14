@@ -17,7 +17,7 @@ export default function LeftSide() {
   
 
   return (
-    <div className="lg:w-[300px] bg-white rounded mt-3">
+    <div className="lg:w-[300px] bg-white rounded mt-3 sticky top-2 max-h-[450px] overflow-y-auto">
       <button className="btn bg-[#1FA45B] w-full text-white hover:bg-[#3e7155]">Categories</button>
 
       <div className="px-2 mt-3">
