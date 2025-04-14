@@ -11,6 +11,6 @@ export default defineConfig({
   ],
   server: {
     port: 3000,
-    open: '/duas/67fb6bc77f45cb4e43ea5ce2', 
+    open: 'https://dua-1.netlify.app/duas/67fb6bc77f45cb4e43ea5ce2', 
   },
 })

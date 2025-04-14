@@ -11,7 +11,7 @@ export default function CategoriesCard() {
     const {data : informations , isLoading} = useQuery({
         queryKey : ['categoryInfo' , id],
         queryFn : async() => {
-                const res = await axios.get(`http://localhost:5000/categories/${id}`);
+                const res = await axios.get(`https://task-2-server-six.vercel.app/categories/${id}`);
                  console.log("data" , res.data[0])
                  return res?.data[0];
         }

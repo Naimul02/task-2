@@ -9,7 +9,7 @@ export default function CategoriesInfo() {
     const {data : categoriesInfo } = useQuery({
             queryKey : ['categoryInfo'],
             queryFn : async() => {
-                    const res = await axios.get('http://localhost:5000/categories');
+                    const res = await axios.get('https://task-2-server-six.vercel.app/categories');
                     console.log("datas : " , res.data)
                     return res.data
             }
